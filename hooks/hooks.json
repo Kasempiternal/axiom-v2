@@ -1,0 +1,34 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'O=\"$CLAUDE_TOOL_OUTPUT\"; echo \"$O\" | grep -qE \"Unable to simultaneously satisfy constraints\" && echo \"Tip: Auto Layout conflict — load ax-uikit\"; echo \"$O\" | grep -qE \"Actor-isolated|Sendable|data race|@MainActor\" && echo \"Tip: Concurrency issue — load ax-concurrency\"; echo \"$O\" | grep -qE \"no such column|FOREIGN KEY constraint|migration\" && echo \"Tip: Database migration issue — load ax-grdb or ax-swiftdata\"; echo \"$O\" | grep -qE \"retain cycle|memory leak|deinit.*never called\" && echo \"Tip: Memory issue — load ax-performance\"; echo \"$O\" | grep -qE \"CKError|CKRecord.*error|ubiquitous.*error|iCloud Drive|NSFileCoordinator\" && echo \"Tip: Cloud sync issue — load ax-cloud-storage\"; echo \"$O\" | grep -qE \"error:.*module.*not found|linker command failed\" && echo \"Tip: Build issue — /axiom:fix-build\"; exit 0'"
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'if [[ \"$TOOL_INPUT_FILE_PATH\" == *.swift ]] && command -v swiftformat &>/dev/null; then swiftformat \"$TOOL_INPUT_FILE_PATH\" --quiet || true; fi; exit 0'"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/session-start.sh\""
+          }
+        ]
+      }
+    ]
+  }
+}

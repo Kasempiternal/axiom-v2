@@ -1,0 +1,179 @@
+{
+  "name": "axiom",
+  "version": "3.0.0",
+  "description": "Workflow-oriented Claude Code skills for modern iOS/Swift development — SwiftUI, Swift 6, Liquid Glass, Apple Intelligence, and more",
+  "author": "Charles Wiltgen",
+  "license": "MIT",
+  "commands": [
+    "./commands/fix-build.md",
+    "./commands/audit.md",
+    "./commands/run-tests.md",
+    "./commands/analyze-crash.md",
+    "./commands/profile.md",
+    "./commands/optimize-build.md",
+    "./commands/status.md",
+    "./commands/test-simulator.md"
+  ],
+  "skills": [
+    {
+      "name": "ax-onboard",
+      "description": "Axiom skill index and quick-start. Use at session start in iOS projects to discover available skills."
+    },
+    {
+      "name": "ax-apple-docs",
+      "description": "Apple framework API lookup, Xcode-bundled LLM docs, Swift compiler diagnostics, WWDC session references, and Xcode MCP integration."
+    },
+    {
+      "name": "ax-build",
+      "description": "Xcode build failures, compilation errors, dependency conflicts, simulator issues, environment-first diagnostics, Derived Data, SPM cache, TestFlight triage."
+    },
+    {
+      "name": "ax-build-ref",
+      "description": "Reference — xcodebuild flags, build settings, SPM configuration, xcconfig syntax, build phase scripts, CI/CD pipeline patterns."
+    },
+    {
+      "name": "ax-shipping",
+      "description": "App Store submission, rejection troubleshooting, metadata requirements, privacy manifests, code signing, export compliance, age ratings, CI/CD."
+    },
+    {
+      "name": "ax-lldb",
+      "description": "Runtime debugging with LLDB — breakpoints, variable inspection, expression evaluation, memory commands, symbolic breakpoints, Python scripting, crash analysis."
+    },
+    {
+      "name": "ax-swiftui",
+      "description": "SwiftUI views, layout, navigation, animations, gestures, architecture, state management, debugging view updates, performance, iOS 26 Liquid Glass, app composition."
+    },
+    {
+      "name": "ax-swiftui-ref",
+      "description": "Reference — SwiftUI containers, layout types, navigation APIs, animation curves, search, iOS 26 features, complete modifier catalog."
+    },
+    {
+      "name": "ax-uikit",
+      "description": "UIKit integration with SwiftUI, UIViewRepresentable bridging, Auto Layout debugging, UIKit animations, constraint conflicts."
+    },
+    {
+      "name": "ax-design",
+      "description": "Apple Human Interface Guidelines, Liquid Glass adoption, SF Symbols usage, typography, color systems, design patterns for iOS/iPadOS/watchOS."
+    },
+    {
+      "name": "ax-design-ref",
+      "description": "Reference — HIG specifications, SF Symbols catalog, typography scales, color tokens, Liquid Glass API details, platform-specific design metrics."
+    },
+    {
+      "name": "ax-swiftdata",
+      "description": "SwiftData @Model, queries, relationships, custom migrations, VersionedSchema, background contexts, performance, debugging migration failures."
+    },
+    {
+      "name": "ax-core-data",
+      "description": "Core Data stack setup, NSManagedObject, fetch requests, schema migrations, thread confinement, N+1 queries, debugging crashes."
+    },
+    {
+      "name": "ax-grdb",
+      "description": "GRDB/SQLite patterns, raw SQL, @Table models, SQLiteData/Point-Free integration, Realm migration, database migration strategies."
+    },
+    {
+      "name": "ax-cloud-storage",
+      "description": "CloudKit sync, CKRecord operations, iCloud Drive file coordination, ubiquitous containers, conflict resolution, debugging sync failures."
+    },
+    {
+      "name": "ax-file-storage",
+      "description": "File system storage locations, sandboxing, file protection, backup exclusions, Codable serialization, storage diagnostics, purge strategies."
+    },
+    {
+      "name": "ax-concurrency",
+      "description": "Swift 6 strict concurrency — async/await, actors, @MainActor, Sendable, data races, @concurrent, Mutex/Atomic, ownership conventions, isolation patterns."
+    },
+    {
+      "name": "ax-concurrency-ref",
+      "description": "Reference — concurrency profiling with Instruments, Time Profiler async workflows, actor contention analysis, thread sanitizer patterns."
+    },
+    {
+      "name": "ax-performance",
+      "description": "Memory leak detection, retain cycle debugging, Instruments profiling, hang diagnostics, display performance, MetricKit, xctrace automation."
+    },
+    {
+      "name": "ax-energy",
+      "description": "Battery drain diagnosis, energy anti-patterns (timers, polling, GPS, animations), thermal management, background energy budgets."
+    },
+    {
+      "name": "ax-energy-ref",
+      "description": "Reference — Energy optimization APIs, thermal state monitoring, background refresh budgets, power metrics, Instruments energy templates."
+    },
+    {
+      "name": "ax-swift-perf",
+      "description": "Swift language-level performance — COW, ARC overhead, generics specialization, collection efficiency, memory layout, inlining, whole-module optimization."
+    },
+    {
+      "name": "ax-networking",
+      "description": "URLSession, Network.framework, NWConnection, structured concurrency networking, legacy API migration, connection diagnostics, TLS debugging."
+    },
+    {
+      "name": "ax-networking-ref",
+      "description": "Reference — Network.framework API, NWConnection states, NWListener, NWBrowser, QUIC/WebSocket, TLS configuration, path monitoring."
+    },
+    {
+      "name": "ax-storekit",
+      "description": "StoreKit 2 in-app purchases, subscriptions, transaction handling, receipt validation, restore purchases, StoreKit testing configuration."
+    },
+    {
+      "name": "ax-app-intents",
+      "description": "App Intents for Siri/Shortcuts, @AssistantIntent, AppShortcutsProvider, parameterized intents, intent discovery, Spotlight integration."
+    },
+    {
+      "name": "ax-widgets",
+      "description": "WidgetKit timeline providers, Live Activities, Dynamic Island, widget configuration, widget families, interactive widgets, StandBy mode."
+    },
+    {
+      "name": "ax-media",
+      "description": "AVFoundation audio/video, Now Playing metadata, CarPlay integration, MusicKit, Core Haptics, PhotosPicker, photo library access."
+    },
+    {
+      "name": "ax-background-tasks",
+      "description": "BGTaskScheduler, background refresh, processing tasks, background URLSession, debugging background execution, push-to-sync patterns."
+    },
+    {
+      "name": "ax-core-location",
+      "description": "Core Location authorization, CLLocationManager, geofencing, significant location changes, beacon ranging, debugging location issues."
+    },
+    {
+      "name": "ax-privacy",
+      "description": "Privacy manifests, required reason APIs, deep link debugging, Transferable protocol, localization, app discoverability, Spotlight indexing."
+    },
+    {
+      "name": "ax-foundation-models",
+      "description": "Apple Foundation Models, @Generable structs, LanguageModelSession, Tool protocol, streaming, guardrails, on-device AI integration."
+    },
+    {
+      "name": "ax-foundation-models-ref",
+      "description": "Reference — Foundation Models API, session lifecycle, @Generable constraints, Tool protocol details, availability checks, error handling."
+    },
+    {
+      "name": "ax-coreml",
+      "description": "CoreML model deployment, PyTorch conversion, model compression (quantization/palettization), MLTensor, stateful models, SpeechAnalyzer."
+    },
+    {
+      "name": "ax-vision",
+      "description": "Vision framework — image analysis, OCR, barcode scanning, pose detection, subject segmentation, DataScannerViewController, document scanning."
+    },
+    {
+      "name": "ax-camera",
+      "description": "AVCaptureSession setup, camera preview, photo/video capture, interruption handling, threading, permission patterns, debugging capture issues."
+    },
+    {
+      "name": "ax-metal",
+      "description": "Metal migration from OpenGL/DirectX, shader conversion (GLSL→MSL), Metal API patterns, render pipelines, compute shaders, debugging GPU."
+    },
+    {
+      "name": "ax-3d-games",
+      "description": "SpriteKit, SceneKit, RealityKit game development — scene graphs, ECS architecture, physics, actions, game loops, SwiftUI integration."
+    },
+    {
+      "name": "ax-testing",
+      "description": "Swift Testing, XCTest, UI testing, async test patterns, test architecture, recording UI tests, mocking, flaky test debugging."
+    },
+    {
+      "name": "ax-simulator",
+      "description": "Simulator management, screenshot capture, push notification testing, location simulation, Axe automation tool reference."
+    }
+  ]
+}
