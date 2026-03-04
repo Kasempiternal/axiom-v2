@@ -21,7 +21,8 @@ The original Axiom plugin is excellent and comprehensive, but it ships with a la
 ## Installation
 
 ```
-/plugin install Kasempiternal/axiom-v2
+/plugin marketplace add Kasempiternal/axiom-v2
+/plugin install axiom
 ```
 
 ## Attribution
