@@ -2,7 +2,7 @@
   "name": "axiom",
   "version": "3.0.0",
   "description": "Workflow-oriented Claude Code skills for modern iOS/Swift development — SwiftUI, Swift 6, Liquid Glass, Apple Intelligence, and more",
-  "author": "Charles Wiltgen",
+  "author": "Kasempiternal (fork of Axiom by Charles Wiltgen)",
   "license": "MIT",
   "commands": [
     "./commands/fix-build.md",

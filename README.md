@@ -20,11 +20,9 @@ The original Axiom plugin is excellent and comprehensive, but it ships with a la
 
 ## Installation
 
-```bash
-claude mcp add axiom -- npx -y @anthropic/claude-code-mcp
 ```
-
-Or clone directly into your Claude Code plugins directory.
+/plugin install Kasempiternal/axiom-v2
+```
 
 ## Attribution
 

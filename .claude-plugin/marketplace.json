@@ -1,0 +1,17 @@
+{
+  "name": "axiom-v2",
+  "version": "1.0.0",
+  "description": "Workflow-oriented Claude Code skills for modern iOS/Swift development",
+  "owner": {
+    "name": "Kasempiternal",
+    "url": "https://github.com/Kasempiternal"
+  },
+  "plugins": [
+    {
+      "name": "axiom",
+      "version": "3.0.0",
+      "description": "Workflow-oriented Claude Code skills for modern iOS/Swift development — SwiftUI, Swift 6, Liquid Glass, Apple Intelligence, and more",
+      "source": "./axiom-plugin"
+    }
+  ]
+}
